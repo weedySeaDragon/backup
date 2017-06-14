@@ -37,7 +37,6 @@ group :production do
   gem 'json'
   gem 'dogapi'
   gem 'aws-ses'
-  gem 'qiniu', '~> 6.5.1'
 end
 
 gem 'rspec'
