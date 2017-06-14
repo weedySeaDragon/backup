@@ -1,9 +1,20 @@
-Backup v4.x
+Backup v4.xa
 ===========
 
 [![Code Climate](https://codeclimate.com/github/backup/backup.png)](https://codeclimate.com/github/backup/backup)
 [![Build Status](https://travis-ci.org/backup/backup.svg?branch=master)](https://travis-ci.org/backup/backup)
 [![Join the chat at https://gitter.im/backup/backup](https://badges.gitter.im/Join%20Chat.svg)][Gitter]
+
+This is a variation (clone) of [the backup gem](https://github.com/backup/backup) _without **Qiniu** storage._  The [qiniu gem ](https://github.com/qiniu/ruby-sdk) has a dependency on an old version of json, and this blocks the backup gem from being updated to more current versions of ruby.
+This variation removes the use of the qimiu gem and so removes Qiniu as a storage option.  
+
+Thus this variation of the backup gem can be used with more current versions of ruby.
+The version number has _"a"_ appended as a clue that this is a variation of the orginal.
+
+---
+
+
+_What follows is from the original Readme:_
 
 Backup is a system utility for Linux and Mac OS X, distributed as a RubyGem, that allows you to easily perform backup
 operations. It provides an elegant DSL in Ruby for _modeling_ your backups. Backup has built-in support for various
